@@ -16,7 +16,7 @@ const app = express();
 
 // Allow requests from certain domains:
 const cors = require('cors');
-let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://sw-cozyapp.netlify.app', 'https://sw-myflix-app-baa5e3f40824.herokuapp.com'];
+let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://sw-cozyapp.netlify.app', 'https://sw-cozy-ca769a64fe57.herokuapp.com/'];
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin) return callback(null, true);
