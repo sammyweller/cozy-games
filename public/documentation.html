@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Cozy Gamer</title>
+</head>
+
+<body>
+    <h1>myFlix</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Request</th>
+            <th>URL</th>
+            <th>HTTP Method</th>
+            <th>Query Parameters</th>
+            <th>Request Body Data Format</th>
+            <th>Response Data Body Format</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+
+          <tr> <!--Return a list of all games-->
+            <td>Get a list of all games</td>
+            <td>/games</td>
+            <td>GET</td>
+            <td>None</td>
+            <td>None</td>
+            <td>A JSON object holding data about all games</td>
+          </tr>
+
+  
+          <tr> <!--Return data about single game by title-->
+            <td>Return data about a single game by title</td>
+            <td>/games/:Title</td>
+            <td>GET</td>
+            <td>:Title</td>
+            <td>None</td>
+            <td>A JSON object holding data about a single game. For example: [Title:"", Description"", Genre:"", Release Year:"", Platform(s)"", Developer(s), "", img""]</td>
+          </tr>
+
+        </tbody>
+      </table>
+</body>
+
+</html>
