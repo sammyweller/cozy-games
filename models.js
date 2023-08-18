@@ -7,7 +7,8 @@ let gameSchema = mongoose.Schema({
     Genre: {type: String},
     Year: {type: String},
     Platforms: {type: String},
-    Developers: {type: String}
+    Developers: {type: String},
+    Image: { type: String }
   });
   
   
