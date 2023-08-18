@@ -3,7 +3,8 @@ const Models = require('./models.js');
 const Games = Models.Game;
 
 // Allows Mongoose to connect to that database so it can perform CRUD operations: 
-mongoose.connect('mongodb://localhost:27017/cozyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/cozyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect( process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Import express packages:
 const express = require('express');
