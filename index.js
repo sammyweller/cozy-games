@@ -15,6 +15,13 @@ const bodyParser = require('body-parser');
 const app = express(); 
 
 // Allow requests from certain domains:
+
+const cors = require('cors');
+
+app.use(cors({
+  origin: '*'
+}));
+/*
 const cors = require('cors');
 let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://main--cozygamer.netlify.app/', 'https://sw-cozy-ca769a64fe57.herokuapp.com/games', 'https://cozygamer.netlify.app/', 'https://sw-cozy-ca769a64fe57.herokuapp.com'];
 app.use(cors({
@@ -27,6 +34,7 @@ app.use(cors({
     return callback(null, true);
   }
 }));
+*/
 
 // Import middleware in common format:
 app.use(morgan('common')); 
